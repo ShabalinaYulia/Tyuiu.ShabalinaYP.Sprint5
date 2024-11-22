@@ -10,7 +10,7 @@ namespace Tyuiu.ShabalinaYP.Sprint5.Task2.V22
                                             { 8, 5,  6 },
                                             { 9, 6, -2 } };
             int rows = matrix.GetLength(0);
-            int cols = matrix.GetLength(1);
+            int columns = matrix.GetLength(1);
             Console.WriteLine("Спринт #5 | Выполнил: Шабалина Ю. П. | ПКТб-24-1");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #5                                                               *");
@@ -27,9 +27,9 @@ namespace Tyuiu.ShabalinaYP.Sprint5.Task2.V22
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("Массив:");
-            for (int i = 0; i < rows; i++)
+            for (int i = 0; i < 3; i++)
             {
-                for (int j = 0; j < cols; j++)
+                for (int j = 0; j < 3; j++)
                 {
                     Console.Write($"{matrix[i, j]} \t");
                 }

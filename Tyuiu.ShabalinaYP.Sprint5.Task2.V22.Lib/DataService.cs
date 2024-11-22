@@ -15,44 +15,42 @@ namespace Tyuiu.ShabalinaYP.Sprint5.Task2.V22.Lib
             }
             int rows = matrix.GetLength(0);
             int columns = matrix.GetLength(1);
-            matrix = new int[3, 3];
-            string res = "";
+            
             for (int i = 0; i < rows; i++)
             {
                 for (int j = 0; j < columns; j++)
                 {
-                    if (matrix[i, j] >= 0)
+                    if (matrix[i, j] < 0) matrix[i, j] = 0;
+                    else
                     {
                         matrix[i, j] = 1;
                     }
-                    if (matrix[i, j] <= 0)
-                    {
-                        matrix[i, j] = 0;
-                    }
+                    
                 }
             }
+            string str = "";
             for (int i = 0; i < rows; i++)
             {
                 for (int j = 0; j < columns; j++)
                 {
                     if (j != columns-1)
                     {
-                        res = res + matrix[i, j] + ";";
+                        str += matrix[i, j] + ";";
                     }
                     else 
                     {
-                        res = res + matrix[i, j];
+                        str += matrix[i, j];
                     }
                 }
                 if (i != rows-1)
                 {
-                    File.AppendAllText(path, res + Environment.NewLine);
+                    File.AppendAllText(path, str + Environment.NewLine);
                 }
                 else
                 {
-                    File.AppendAllText(path, res);
+                    File.AppendAllText(path, str);
                 }
-                res = "";
+                str = "";
             }
 
             return path;
