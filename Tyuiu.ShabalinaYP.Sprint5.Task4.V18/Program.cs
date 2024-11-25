@@ -22,14 +22,13 @@ namespace Tyuiu.ShabalinaYP.Sprint5.Task4.V18
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
-            string path = @"C:\Users\User\source\repos\Tyuiu.ShabalinaYP.Sprint5\DataSprint5\InPutDataFileTask4V0.txt";
+            string path = @"C:\Users\User\source\repos\Tyuiu.ShabalinaYP.Sprint5\DataSprint5\InPutDataFileTask4V18.txt";
             Console.WriteLine("Данные находятся в файле: " + path);
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
             double res = ds.LoadFromDataFile(path);
-            Console.WriteLine("Файл: " + res);
-            Console.WriteLine("Создан!");
+            Console.WriteLine("Значение выражения равно: " + res);
             Console.ReadKey();
         }
     }

@@ -26,8 +26,7 @@ namespace Tyuiu.ShabalinaYP.Sprint5.Task5.V23
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
             double res = ds.LoadFromDataFile(path);
-            Console.WriteLine("Файл: " + res);
-            Console.WriteLine("Создан!");
+            Console.WriteLine("Минимальное число в файле: " + res);
             Console.ReadKey();
         }
     }
