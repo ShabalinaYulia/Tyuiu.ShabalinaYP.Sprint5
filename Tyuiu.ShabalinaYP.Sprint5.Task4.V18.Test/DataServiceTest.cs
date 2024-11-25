@@ -6,11 +6,12 @@ namespace Tyuiu.ShabalinaYP.Sprint5.Task4.V18.Test
     {
         [TestMethod]
         public void CheckedExistsFile()
-        {
-            DataService dataService = new DataService();
-            string path = @"C:\DataSprint5\InPutDataFileTask4V18";
+        {            
+            string path = @"C:\Users\User\source\repos\Tyuiu.ShabalinaYP.Sprint5\DataSprint5\InPutDataFileTask4V18.txt";
             FileInfo fileInfo = new FileInfo(path);
-            Assert.AreEqual(true, fileInfo.Exists);
+            bool fileExist = fileInfo.Exists;
+            bool wait = true;
+            Assert.AreEqual(wait, fileExist);
         }
     }
 }
