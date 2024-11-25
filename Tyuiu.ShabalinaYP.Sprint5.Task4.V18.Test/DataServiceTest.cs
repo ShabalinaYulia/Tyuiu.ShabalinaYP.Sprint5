@@ -7,7 +7,8 @@ namespace Tyuiu.ShabalinaYP.Sprint5.Task4.V18.Test
         [TestMethod]
         public void CheckedExistsFile()
         {
-            string path = @"C:\Users\User\AppData\Local\Temp\InPutDataFileTask4V18";
+            DataService dataService = new DataService();
+            string path = @"C:\DataSprint5\InPutDataFileTask4V18";
             FileInfo fileInfo = new FileInfo(path);
             Assert.AreEqual(true, fileInfo.Exists);
         }
