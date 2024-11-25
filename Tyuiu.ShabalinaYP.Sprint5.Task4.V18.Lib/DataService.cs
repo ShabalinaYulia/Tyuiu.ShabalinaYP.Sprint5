@@ -9,7 +9,7 @@ namespace Tyuiu.ShabalinaYP.Sprint5.Task4.V18.Lib
             string str = File.ReadAllText(path);
             string strX = str.Replace(".", ",");
             double x = Convert.ToDouble(strX);
-            double res = Math.Round(Math.Cos(x) + (Math.Pow(x, 2)/2), 3);
+            double res = Math.Round(Math.Cos(x) + (Math.Pow(Convert.ToDouble(strX), 2)/2), 3);
             return res;
         }
     }
