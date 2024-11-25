@@ -11,6 +11,7 @@ namespace Tyuiu.ShabalinaYP.Sprint5.Task5.V23.Lib
                 string line;
                 while ((line = reader.ReadLine()) != null)
                 {
+                    line = line.Replace(".", ",");
                     string[] num = line.Split(' ');
                     foreach (string s in num)
                     {
