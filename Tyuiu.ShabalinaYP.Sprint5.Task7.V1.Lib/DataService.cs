@@ -18,7 +18,7 @@ namespace Tyuiu.ShabalinaYP.Sprint5.Task7.V1.Lib
                 string line;
                 while ((line = reader.ReadLine()) != null)
                 {
-                    for (int i = 0; i < line.Length; i++)
+                    for (int i = 0; i < (line.Length-1); i++)
                     {
                         if (!char.IsDigit(line[i]))
                         {
