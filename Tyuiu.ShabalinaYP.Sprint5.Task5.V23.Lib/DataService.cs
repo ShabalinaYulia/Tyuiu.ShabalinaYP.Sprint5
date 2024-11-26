@@ -6,7 +6,7 @@ namespace Tyuiu.ShabalinaYP.Sprint5.Task5.V23.Lib
     {
         public double LoadFromDataFile(string path)
         {
-            double min = 100;
+            double min = double.MaxValue;
             using (StreamReader reader = new StreamReader(path)) 
             {                
                 string line;
@@ -17,7 +17,7 @@ namespace Tyuiu.ShabalinaYP.Sprint5.Task5.V23.Lib
                     foreach (string s in num)
                     {
                         double d = double.Parse(s);
-                        if (d < min) min = d;
+                        if ((d != Math.Round(d)) && (d < min)) min = d;
                     }
                 }
             }
