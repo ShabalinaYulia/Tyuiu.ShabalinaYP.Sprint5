@@ -19,8 +19,8 @@ namespace Tyuiu.ShabalinaYP.Sprint5.Task7.V1
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
-            string path = $@"{Directory.GetCurrentDirectory()}\InPutDataFileTask7V1.txt";
-            string pathSaveFile = $@"{Directory.GetCurrentDirectory()}\OutPutDataFileTask7V1.txt";
+            string path = Path.Combine(Path.GetTempPath(), "InPutDataFileTask7V1.txt");
+            string pathSaveFile = Path.Combine(Path.GetTempPath(), "OutPutDataFileTask7V1.txt");
             Console.WriteLine("Данные находятся в файле: " + path);
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
