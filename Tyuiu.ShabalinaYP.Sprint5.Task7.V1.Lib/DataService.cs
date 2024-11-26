@@ -5,7 +5,7 @@ namespace Tyuiu.ShabalinaYP.Sprint5.Task7.V1.Lib
     {
         public string LoadDataAndSave(string path)
         {
-            string pathSaveFile = @"C:\Users\User\source\repos\Tyuiu.ShabalinaYP.Sprint5\DataSprint5\OutPutDataFileTask1V1.txt";
+            string pathSaveFile = $@"{Directory.GetCurrentDirectory()}\OutPutDataFileTask1V1.txt";
             FileInfo fileInfo = new FileInfo(pathSaveFile);
             bool fileExists = fileInfo.Exists;
             if (fileExists)
