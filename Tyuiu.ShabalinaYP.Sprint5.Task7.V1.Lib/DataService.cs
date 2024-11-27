@@ -27,8 +27,7 @@ namespace Tyuiu.ShabalinaYP.Sprint5.Task7.V1.Lib
                     }
                     File.AppendAllText(pathSaveFile, strLine + Environment.NewLine);
                     strLine = "";
-
-                
+                    
                 }
             }
             return pathSaveFile;
